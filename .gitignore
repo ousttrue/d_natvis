@@ -1,0 +1,15 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/d_natvis
+d_natvis.so
+d_natvis.dylib
+d_natvis.dll
+d_natvis.a
+d_natvis.lib
+d_natvis-test-*
+*.exe
+*.o
+*.obj
+*.lst
