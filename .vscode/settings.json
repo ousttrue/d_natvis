@@ -1,5 +1,15 @@
 {
     "cSpell.words": [
+        "dflags",
+        "mscrtlib",
+        "msvcrt",
+        "msvcrtd",
         "natvis"
+    ],
+    "files.associations": {
+        "*.natvis": "xml",
+    },
+    "dscanner.ignoredKeys": [
+        "dscanner.style.undocumented_declaration"
     ]
 }

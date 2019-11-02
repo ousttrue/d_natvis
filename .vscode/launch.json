@@ -5,7 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "debug",
+            "name": "with natvis",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/d_natvis.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "visualizerFile": "${workspaceFolder}/d.natvis"
+        },
+        {
+            "name": "without natvis",
             "type": "cppvsdbg",
             "request": "launch",
             "program": "${workspaceFolder}/d_natvis.exe",
