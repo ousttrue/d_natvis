@@ -26,6 +26,14 @@
             "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false
+        },
+        {
+            "name": "mago",
+            "type": "mago-mi",
+            "request": "launch",
+            "target": "${workspaceFolder}/d_natvis.exe",
+            "cwd": "${workspaceFolder}",
+            "showDevDebugOutput": true,
         }
     ]
 }
