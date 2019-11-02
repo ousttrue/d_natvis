@@ -12,31 +12,31 @@ struct SliceView(T)
 	}
 }
 
+SliceView!T makeView(T)(T[] slice)
+{
+	return SliceView!T(slice);
+}
+
+
 struct Point
 {
 	float x;
 	float y;
 }
 
-SliceView!T makeView(T)(T[] slice)
-{
-	return SliceView!T(slice);
-}
-
 void main()
 {
 	auto array = [1, 2, 3];
+	writeln(typeid(int[]));
 	auto slice = makeView(array);
 
 	auto text = "Edit source/app.d to start your project.";
 	auto textSlice = makeView(text);
 
-	Point[] points = [
-		{1, 2},
-		{3, 4},
-	];
+	Point[] points = [{1, 2}, {3, 4},];
 	auto pointSlice = makeView(points);
 
 	writeln(text);
 	writeln(string.stringof);
+	writeln(typeid(SliceView!int));
 }

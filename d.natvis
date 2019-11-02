@@ -10,7 +10,7 @@
                 <ValuePointer>ptr</ValuePointer>
             </ArrayItems>
         </Expand>
-     </Type>
+    </Type>
     <Type Name="app.SliceView">
         <DisplayString>{{size = {size}}}</DisplayString>
         <Expand>
