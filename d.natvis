@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <AutoVisualizer xmlns="http://schemas.microsoft.com/vstudio/debugger/natvis/2010">
     <Type Name="string">
-        <DisplayString>"{ptr,s8b}"</DisplayString>
+        <DisplayString>"{ptr,[length]s8b}"</DisplayString>
         <StringView>ptr,length</StringView>
         <Expand>
             <Item Name="[size]">length</Item>
