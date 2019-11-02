@@ -24,6 +24,11 @@ struct Point
 	float y;
 }
 
+class Something
+{
+
+}
+
 void main()
 {
 	auto array = [1, 2, 3];
@@ -35,6 +40,8 @@ void main()
 
 	Point[] points = [{1, 2}, {3, 4},];
 	auto pointSlice = makeView(points);
+
+	auto something = new Something();
 
 	writeln(text);
 	writeln(string.stringof);
