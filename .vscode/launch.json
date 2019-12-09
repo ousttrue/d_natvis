@@ -33,6 +33,21 @@
             "request": "launch",
             "target": "d_natvis.exe",
             "cwd": "${workspaceFolder}",
-        }
+        },
+        {
+            "name": "build",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "dmd",
+            "args": [
+                "${workspaceFolder}/source/app.d",
+                "-debug",
+                "-of=${workspaceFolder}/d_natvis.exe"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false
+        },
     ]
 }
