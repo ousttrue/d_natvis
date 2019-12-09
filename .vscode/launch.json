@@ -31,9 +31,8 @@
             "name": "mago",
             "type": "mago-mi",
             "request": "launch",
-            "target": "${workspaceFolder}/d_natvis.exe",
+            "target": "d_natvis.exe",
             "cwd": "${workspaceFolder}",
-            "showDevDebugOutput": true,
         }
     ]
 }

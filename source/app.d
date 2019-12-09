@@ -17,7 +17,6 @@ SliceView!T makeView(T)(T[] slice)
 	return SliceView!T(slice);
 }
 
-
 struct Point
 {
 	float x;
@@ -26,7 +25,7 @@ struct Point
 
 class Something
 {
-
+	int number = 12;
 }
 
 void main()
@@ -36,12 +35,13 @@ void main()
 	auto slice = makeView(array);
 
 	auto text = "Edit source/app.d to start your project.";
-	auto textSlice = makeView(text);
+	debug immutable textSlice = makeView(text);
 
 	Point[] points = [{1, 2}, {3, 4},];
 	auto pointSlice = makeView(points);
 
-	auto something = new Something();
+	auto autoSomething = new Something();
+	Something something = new Something();
 
 	writeln(text);
 	writeln(string.stringof);
